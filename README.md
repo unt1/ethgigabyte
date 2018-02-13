@@ -5,7 +5,7 @@
 [EventStore](contracts/EventStore.sol) is a contract that has a single method, `publish()` that emits an event with 5 arguments totaling in 128 bytes of payload.
 
 We batch 65k batches of 128 transactions of 128 bytes each to store 1 gigabyte of "useful" data on a Blockchain and compute
-the fees necessary to make those transactions go through.
+the fees necessary to make those transactions go through. The transactions are ran on a private truffle to collect accurate enough information on how much gas is required to store one event.
 
 To reproduce:
 

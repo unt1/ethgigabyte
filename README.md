@@ -9,7 +9,7 @@ the fees necessary to make those transactions go through.
 
 To reproduce:
 
-```
+```console
 ethstore% npm install -g truffle
 ethstore% truffle test test/gigabyte.js 
 Using network 'test'.
